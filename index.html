@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+            var req = new XMLHttpRequest();
+
+            req.open('GET', 'proxy.php?url=http://www.google.com', false);
+            req.send(null);
+
+            if(req.status == 200) {
+            alert(req.responseText);
+            }
+    </script>
 </head>
 <body>
 </body>
